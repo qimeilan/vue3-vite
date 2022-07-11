@@ -31,9 +31,8 @@ let isActive = computed(() => {
 })
 
 function handleRoute(item) {
-    if (!route.currentRoute.value.path.includes(item.path)) {
+      if (route.currentRoute.value.path!=`/${item.path}`) {
         route.push(item.path);
-        console.log(item.path)
     }
 }
 </script>
